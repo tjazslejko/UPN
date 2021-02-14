@@ -1,0 +1,626 @@
+*{
+	margin:0;
+	padding:0;
+}
+#glavni{
+	position:relative;
+	width:210.6mm;
+	height:101.7mm;
+	border:1px solid black;
+	margin:0 auto;
+}
+#levi{
+	height:101.6mm;
+	width:60.2mm;
+	background-color:white;
+	opacity:0.8;
+	float:left;
+	border-right:1px solid black;
+}
+#desni{
+	height:101.6mm;
+	width:150mm;
+	float:right;
+}
+#zgornji{
+	height:39mm;
+	width:150mm;
+	background-color:#ffa394;
+	float:right;
+	opacity:0.7;
+}
+#srednji{
+	height:48mm;
+	width:150mm;
+	float:right;
+	background-color:#ffe19f;
+	opacity:0.8;
+}
+#spodnji{
+	height:12.6mm;
+	width:150mm;
+	background-color:white;
+	float:right;
+}
+@font-face{
+	font-family:'NimbusSanDEE';
+	src: url('../pisava/NimbusSanDEE.ttf');
+}
+.upn{
+	font-family:'NimbusSanDEE', nimbussan dee;
+	color:black;
+	font-size:3.6mm;
+	font-weight:bold;
+	padding-left:4mm;
+	padding-top:1mm;
+}
+.ime_placnika{
+	font-family:'NimbusSanDEE', nimbussan dee;
+	color:#ff674d;
+	font-size:2.5mm;
+	font-weight:bold;
+	padding-left:4mm;
+	padding-top:0.3mm;
+}
+#ime_placnika{
+	margin-left:4mm;
+	width:53mm;
+	height:9mm;
+	
+}
+#poljeime_placnika{
+	width:53mm;
+	height:9mm;
+}
+textarea{
+	outline:none;
+	border:1px solid;
+	border-color: #ff674d;
+	resize:none;
+}
+.namen{
+	font-family:'NimbusSanDEE', nimbussan dee;
+	color:#ff674d;
+	font-size:2.5mm;
+	font-weight:bold;
+	padding-left:4mm;
+	padding-top:0.5mm;
+}
+#namen{
+	margin-left:4mm;
+	width:53mm;
+	height:9mm;
+}
+#poljenamen_placnika{
+	width:53mm;
+	height:9mm;
+}
+.znesek{
+	font-family:'NimbusSanDEE', nimbussan dee;
+	color:#ff674d;
+	font-size:2.5mm;
+	font-weight:bold;
+	padding-left:17mm;
+	padding-top:0.9mm;
+}
+.eur{
+	font-family:'NimbusSanDEE', nimbussan dee;
+	color:black;
+	font-size:3.88mm;
+	font-weight:bold;
+	padding-left:7mm;
+	padding-top:0.5mm;
+}
+#znesek{
+	margin-left:1.3mm;
+	width:40mm;
+	height:5mm;
+	margin-top:-1mm
+}
+#poljeznesek_placnika{
+	width:40mm;
+	height:5mm;
+	background:white;
+}
+.IBAN{
+	font-family:'NimbusSanDEE', nimbussan dee;
+	color:#ff674d;
+	font-size:2.5mm;
+	font-weight:bold;
+	padding-left:4mm;
+	padding-top:0.1mm;
+}
+#IBAN{
+	margin-left:4mm;
+	width:53mm;
+	height:13.5mm;
+}
+#poljeIBAN_placnika{
+	width:53mm;
+	height:13.5mm;
+}
+.referenca{
+	font-family:'NimbusSanDEE', nimbussan dee;
+	color:#ff674d;
+	font-size:2.5mm;
+	font-weight:bold;
+	padding-left:4mm;
+	padding-top:0.5mm;
+}
+#referenca{
+	margin-left:4mm;
+	width:53mm;
+	height:9mm;
+}
+#poljereferenca_placnika{
+	width:53mm;
+	height:9mm;
+}
+.ime_prejemnika{
+	font-family:'NimbusSanDEE', nimbussan dee;
+	color:#ff674d;
+	font-size:2.5mm;
+	font-weight:bold;
+	padding-left:4mm;
+	padding-top:0.5mm;
+}
+#ime_prejemnika{
+	margin-left:4mm;
+	width:53mm;
+	height:9mm;
+}
+#polje_prejemnika{
+	width:53mm;
+	height:9mm;
+}
+.potrditev{
+	font-family:'NimbusSanDEE', nimbussan dee;
+	color:rgb(250,103,77);
+	font-size:2.2mm;
+	font-weight:bold;
+	padding-left:4mm;
+	padding-top:18mm;
+}
+.iban1{
+	font-family:'NimbusSanDEE', nimbussan dee;
+	color:#ff674d;
+	font-size:2.5mm;
+	font-weight:bold;
+	padding-left:4mm;
+	padding-top:1mm;
+}
+#hr1{
+	position:absolute;
+	left:61.5mm;
+	top:1.8mm;
+	width:2mm;
+	border:solid 1px #ff674d;
+}
+#hr2{
+	position:absolute;
+	left:71.3mm;
+	top:1.8mm;
+	width:63.9mm;
+	border:solid 1px #ff674d;
+}
+.polog1{
+	font-family:'NimbusSanDEE', nimbussan dee;
+	color:#ff674d;
+	font-size:2.5mm;
+	font-weight:bold;
+	position:absolute;
+	top:1mm;
+	left:140mm;
+}
+#hr3{
+	position:absolute;
+	left:149mm;
+	top:1.8mm;
+	width:8mm;
+	border:solid 1px #ff674d;
+}
+.dvig1{
+	font-family:'NimbusSanDEE', nimbussan dee;
+	color:#ff674d;
+	font-size:2.5mm;
+	font-weight:bold;
+	position:absolute;
+	top:1mm;
+	left:160.5mm;
+}
+#iban2{
+	width:71.25mm;
+	height:5mm;
+	margin-left:3.5mm;
+    margin-top:-0.5mm;
+}
+#iban3{
+	width:71.25mm;
+	height:5mm;
+}
+input{
+	outline:none;
+	border:1px solid;
+	border-color: #ff674d;
+	resize:none;
+	background-image: url("../ozadje1.png");
+	letter-spacing:2mm;
+}
+#dvigpolog1{
+	margin-left:4.5mm;
+	width:4mm;
+	height:4mm;
+}
+#dvigpolog2{
+	margin-left:14.6mm;
+	width:4mm;
+	height:4mm;
+}
+.referenca1{
+	font-family:'NimbusSanDEE', nimbussan dee;
+	color:#ff674d;
+	font-size:2.5mm;
+	font-weight:bold;
+	padding-left:4mm;
+	padding-top:-0.5mm;
+}
+#referenca2{
+	width:15mm;
+	height:5mm;
+	margin-left:3.5mm;
+    margin-top:-0.5mm;
+}
+#referenca3{
+	width:15mm;
+	height:5mm;
+}
+#referenca4{
+	width:82.5mm;
+	height:5mm;
+	margin-left:1.3mm;
+    margin-top:-0.5mm;
+}
+#referenca5{
+	width:82.3mm;
+	height:5mm;
+}
+.placnik{
+	transform:rotate(-90deg);
+	font-family:'NimbusSanDEE', nimbussan dee;
+	color:#ff674d;
+	font-weight:bold;
+	font-size:2.5mm;
+	position:absolute;
+	left:58mm;
+}
+#podpis{
+	width:43mm;
+	height:28.7mm;
+	position:absolute;
+	top:1.5mm;
+	left:166mm;
+	background-color:white;
+	border:1px solid #ff674d;
+}
+#podpis-canvas{
+	width:43mm;
+	height:20.7mm;
+}
+.podpisplacnika{
+	font-family:'NimbusSanDEE', nimbussan dee;
+	color:#ff674d;
+	font-size:2.1mm;
+	font-weight:bold;
+	position:absolute;
+	top:25.5mm;
+	left:180.8mm;
+}
+.zigi{
+	font-family:'NimbusSanDEE', nimbussan dee;
+	color:#ff674d;
+	font-size:2.1mm;
+	font-weight:bold;
+	position:absolute;
+	top:27.5mm;
+	left:180.8mm;
+}
+#hrpodpis{
+	position:absolute;
+	left:167.5mm;
+	top:24.5mm;
+	width:40mm;
+	border:solid 1px #ff674d;
+}
+.imenaslov{
+	font-family:'NimbusSanDEE', nimbussan dee;
+	color:#ff674d;
+	font-size:2.7mm;
+	font-weight:bold;
+	padding-left:4.1mm;
+	padding-top:-0.7mm;
+}
+#imenaslov{
+	margin-left:3.75mm;
+	width:99.5mm;
+	height:9mm;
+	margin-top:-0.3mm;
+}
+#imenaslovplacnika{
+	width:99.5mm;
+	height:9mm;
+}
+.kodanamena{
+	font-family:'NimbusSanDEE', nimbussan dee;
+	color:#ff674d;
+	font-size:2.5mm;
+	font-weight:bold;
+	padding-left:4mm;
+	padding-top:0.5mm;
+}
+#kodanamena1{
+	margin-top:-0.3mm;
+	margin-left:3.5mm;
+	width:15mm;
+	height:5mm;
+}
+#kodanamena2{
+	width:15mm;
+	height:5mm;
+}
+#kodanamena3{
+	margin-top:-0.3mm;
+	margin-left:2.5mm;
+	width:112.5mm;
+	height:5mm;
+}
+#kodanamena4{
+	width:112.5mm;
+	height:5mm;
+}
+#nujno{
+	margin-left:3mm;
+	width:4.5mm;
+	height:4.5mm;
+}
+.namenrokplacila{
+	font-family:'NimbusSanDEE', nimbussan dee;
+	color:#ff674d;
+	font-size:2.5mm;
+	font-weight:bold;
+	position:absolute;
+	top:31.3mm;
+	left:82.7mm;
+}
+.nujno{
+	font-family:'NimbusSanDEE', nimbussan dee;
+	color:#ff674d;
+	font-size:2.5mm;
+	font-weight:bold;
+	position:absolute;
+	top:31.3mm;
+	left:198mm;
+}
+#hr4{
+	position:absolute;
+	left:61.5mm;
+	top:40.5mm;
+	width:12mm;
+	border:solid 1px #ff674d;
+}
+#hr5{
+	position:absolute;
+	left:84.3mm;
+	top:40.5mm;
+	width:36mm;
+	border:solid 1px #ff674d;
+}
+#hr6{
+	position:absolute;
+	left:136.5mm;
+	top:40.5mm;
+	width:17.5mm;
+	border:solid 1px #ff674d;
+}
+#hr7{
+	position:absolute;
+	left:178.8mm;
+	top:40.5mm;
+	width:16mm;
+	border:solid 1px #ff674d;
+}
+.znesek1{
+	font-family:'NimbusSanDEE', nimbussan dee;
+	color:#ff674d;
+	font-size:2.5mm;
+	font-weight:bold;
+	padding-left:15mm;
+	padding-top:0.5mm;
+}
+.datum{
+	font-family:'NimbusSanDEE', nimbussan dee;
+	color:#ff674d;
+	font-size:2.5mm;
+	font-weight:bold;
+	position:absolute;
+	top:39.5mm;
+	left:121.5mm;
+}
+.BIC1{
+	font-family:'NimbusSanDEE', nimbussan dee;
+	color:#ff674d;
+	font-size:2.5mm;
+	font-weight:bold;
+	position:absolute;
+	top:39.5mm;
+	left:155.5mm;
+}
+.eur1{
+	font-family:'NimbusSanDEE', nimbussan dee;
+	color:black;
+	font-size:3.88mm;
+	font-weight:bold;
+	padding-left:6mm;
+	padding-top:0.5mm;
+}
+#znesek2{
+	margin-top:-1.5mm;
+	margin-left:0.7mm;
+	width:41.25mm;
+	height:5mm;
+}
+#znesek3{
+	width:41.25mm;
+	height:5mm;
+}
+#datumplacila{
+	margin-top:-1.5mm;
+	margin-left:3.8mm;
+	width:30mm;
+	height:5mm;
+}
+#datumplacila1{
+	width:30mm;
+	height:5mm;
+}
+#bic{
+	margin-top:-1.5mm;
+	margin-left:3.5mm;
+	width:40mm;
+	height:5mm;
+}
+#bic1{
+	width:40mm;
+	height:5mm;
+}
+.IBAN1{
+	font-family:'NimbusSanDEE', nimbussan dee;
+	color:#ff674d;
+	font-size:2.5mm;
+	font-weight:bold;
+	padding-left:4mm;
+	padding-top:0.8mm;
+}
+#IBAN12{
+	margin-top:-0.5mm;
+	margin-left:3.5mm;
+	width:127.7mm;
+	height:5mm;
+}
+#IBAN13{
+	width:127.7mm;
+	height:5mm;
+}
+#izjava{
+	margin-top:-1mm;
+	margin-left:5.5mm;
+	width:4.5mm;
+	height:4.5mm;
+}
+#izjava1{
+	width:4.5mm;
+	height:4.5mm;
+}
+.izjava{
+	font-family:'NimbusSanDEE', nimbussan dee;
+	color:#ff674d;
+	font-size:2.5mm;
+	font-weight:bold;
+	position:absolute;
+	top:49.2mm;
+	left:198mm;
+}
+.prejemnik{
+	transform:rotate(-90deg);
+	font-family:'NimbusSanDEE', nimbussan dee;
+	color:#ff674d;
+	font-weight:bold;
+	font-size:2.5mm;
+	position:absolute;
+	left:56.2mm;
+}
+.Referenca11{
+	font-family:'NimbusSanDEE', nimbussan dee;
+	color:#ff674d;
+	font-size:2.5mm;
+	font-weight:bold;
+	padding-left:4mm;
+	padding-top:0.2mm;
+}
+#Referenca12{
+	margin-top:-0.5mm;
+	margin-left:3.5mm;
+	width:15mm;
+	height:5mm;
+}
+#Referenca13{
+	width:15mm;
+	height:5mm;
+}
+#Referenca14{
+	margin-top:-0.5mm;
+	margin-left:3.5mm;
+	width:82.5mm;
+	height:5mm;
+}
+#Referenca15{
+	width:82.5mm;
+	height:5mm;
+}
+.upn1{
+	font-family:'NimbusSanDEE', nimbussan dee;
+	color:black;
+	font-size:3.88mm;
+	font-weight:bold;
+	padding-left:2.5mm;
+	padding-top:0.1mm;
+}
+.UniverzalniPN{
+	font-family:'NimbusSanDEE', nimbussan dee;
+	color:black;
+	font-size:2.5mm;
+	font-weight:bold;
+	padding-left:0.2mm;
+}
+.ImeinNaslov{
+	font-family:'NimbusSanDEE', nimbussan dee;
+	color:#ff674d;
+	font-size:2.5mm;
+	font-weight:bold;
+	padding-left:4mm;
+	padding-top:0.2mm;
+}
+#ImeinNaslov{
+	margin-top:-0.2mm;
+	margin-left:3.75mm;
+	width:131.25mm;
+	height:9mm;
+}
+#ImeinNaslov1{
+	width:131.55mm;
+	height:9mm;
+}
+.prostor{
+	font-family:'NimbusSanDEE', nimbussan dee;
+	color:#ff674d;
+	font-size:2.1mm;
+	font-weight:bold;
+	padding-left:58mm;
+	padding-top:3.5mm;
+}
+.prosimo{
+	font-family:'NimbusSanDEE', nimbussan dee;
+	color:#ff674d;
+	font-size:2.1mm;
+	font-weight:bold;
+	padding-left:3.75mm;
+	padding-top:12mm;
+}
+.obrazec{
+	font-family:'NimbusSanDEE', nimbussan dee;
+	color:#ff674d;
+	font-size:2.1mm;
+	font-weight:bold;
+	position:absolute;
+	top:98.9mm;
+	left:173.5mm;
+}

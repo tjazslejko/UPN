@@ -1,0 +1,286 @@
+
+
+<html>
+
+<head>
+
+<title>UPN</title>
+	<meta charset="UTF-8" />
+
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />	
+		<style>	
+		input[type=radio]{
+			-webkit-appearance:none;
+		}
+		input[type=radio]:checked{
+			background:black;
+		}
+		input[type=checkbox]{
+			-webkit-appearance:none;
+		}
+		input[type=checkbox]:checked{
+			background:black;
+		}
+		</style>
+</head>
+
+<body>
+	<form method="GET">
+	
+		<div id="glavni">
+			<div id="levi">
+				<p class="upn">UPN</p>
+				<p class="ime_placnika">Ime plačnika</p>
+				<div id="ime_placnika">
+				<textarea name="poljeime" id="poljeime_placnika"></textarea>
+				</div>
+				<p class="namen">Namen / rok plačila</p>
+				<div id="namen">
+				<textarea name="poljenamen" id="poljenamen_placnika"></textarea>
+				</div>
+				<p class="znesek">Znesek</p>
+				<table>
+					<tr>
+						<td>
+						<p class="eur">EUR</p>
+						</td>
+						<td>
+						<div id="znesek">
+						<input type="number" id="poljeznesek_placnika" dir="rtl"/>					
+						</div>
+						</td>
+					</tr>
+				</table>
+				<p class="IBAN">IBAN prejemnika in BIC banke prejemnika</p>
+				<div id="IBAN">
+				<textarea name="poljeIBAN" id="poljeIBAN_placnika"></textarea>
+				</div>
+				<p class="referenca">Referenca prejemnika</p>
+				<div id="referenca">
+				<textarea name="poljereferenca" id="poljereferenca_placnika"></textarea>
+				</div>
+				<p class="ime_prejemnika">Ime prejemnika</p>
+				<div id="ime_prejemnika">
+				<textarea name="polje_prejemnika" id="poljeime_prejemnika"></textarea>
+				</div>
+				<p class="potrditev">Potrditev placila UPN</p>
+				
+				
+			</div>
+			<div id="desni">
+				<div id="zgornji">
+				<hr id="hr1"></hr><p class="iban1">IBAN</p><hr id="hr2"></hr><p class="polog1">Polog</p><hr id="hr3"></hr><p class="dvig1">Dvig</p>
+				
+				<table>
+					<tr>
+						<td>
+						<div id="iban2">
+						<input type="text" id="iban3"/>
+						</div>
+						</td>
+						<td>
+							<input type="radio" name="dvigpolog" id="dvigpolog1" value="polog"/>
+							<input type="radio" name="dvigpolog" id="dvigpolog2" value="dvig"/>
+						</td>
+						
+					</tr>
+				</table>
+					<p class="referenca1">Referenca</p>
+					<table>
+					<tr>
+						<td>
+						<div id="referenca2">
+						<input type="text" id="referenca3"/>
+						</div>
+						</td>
+						<td>
+						<div id="referenca4">
+						<input type="text" id="referenca5"/>
+						</div>
+						</td>
+					</tr>
+					</table>
+								<div id="podpis">
+								<canvas id="podpis-canvas"></canvas>
+								</div>
+								<hr id="hrpodpis"></hr>
+								<p class="podpisplacnika">Podpis plačnika</p>
+								<p class="zigi">(neobvezno žigi)</p>
+								
+								
+				<p class="placnik">PLAČNIK</p>
+				<p class="imenaslov">Ime in naslov</p>
+				<div id="imenaslov">
+				<textarea name="poljeime" id="imenaslovplacnika"></textarea>
+				</div>
+				<p class="kodanamena">Koda namena</p>
+				<p class="namenrokplacila">Namen / rok plačila</p>
+				<p class="nujno">Nujno</p>
+				
+				<table>
+					<tr>
+						<td>
+						<div id="kodanamena1">
+						<input type="text" id="kodanamena2"/>
+						</div>
+						</td>
+						<td>
+						<div id="kodanamena3">
+						<input type="text" id="kodanamena4"/>
+						</div>
+						</td>
+						<td>
+						<input type="checkbox" name="nujno" id="nujno" value="nujno"/>
+						</td>
+					</tr>
+					
+					</table>
+
+				
+				</div>
+				<div id="srednji">
+					<hr id="hr4"></hr><p class="znesek1">Znesek</p><hr id="hr5"></hr><p class="datum">Datum plačila</p><hr id="hr6"></hr><p class="BIC1">BIC banke prejemnika</p><hr id="hr7"></hr>
+					
+					<table>
+					<tr>
+						<td>
+						<p class="eur1">EUR</p>
+						</td>
+						<td>
+						<div id="znesek2">
+						<input type="number" id="znesek3" dir="rtl"/>
+						</div>
+						</td>
+						<td>
+						<div id="datumplacila">
+						<input type="text" id="datumplacila1"/>
+						</div>
+						</td>
+						<td>
+						<div id="bic">
+						<input type="text" id="bic1"/>
+						</div>
+						</td>
+					</tr>
+					</table>
+					
+					<p class="IBAN1">IBAN</p>
+					<p class="izjava">Izjava</p>
+					<table>
+					<tr>
+						<td>
+						<div id="IBAN12">
+						<input type="text" id="IBAN13"/>
+						</div>
+						</td>
+						<td>
+						<div id="izjava">
+						<input type="checkbox" name="izjava" id="izjava1" value="izjava"/>
+						</div>
+						</td>
+						
+					</tr>
+					</table>
+					
+					<p class="Referenca11">Referenca</p>
+					<p class="prejemnik">PREJEMNIK</p>
+					<table>
+					<tr>
+						<td>
+						<div id="Referenca12">
+						<input type="text" id="Referenca13"/>
+						</div>
+						</td>
+						<td>
+						<div id="Referenca14">
+						<input type="text" id="Referenca15"/>
+						</div>
+						</td>
+						<td>
+						<p class="upn1">UPN</p>
+						</td>
+						<td>
+						<p class="UniverzalniPN"> - Univerzalni plačilni nalog</p>
+						</td>
+						
+					</tr>
+					</table>
+					<p class="ImeinNaslov">Ime in naslov</p>
+					<div id="ImeinNaslov">
+					<textarea name="imeinnaslov" id="ImeinNaslov1"></textarea>
+					</div>
+					<p class="prostor">Prostor za voise ponudnika plačilnih storitev</p>
+					
+				</div>
+				
+				<div id="spodnji">
+				<p class="prosimo">Prosimo ne pišite in ne žigosajte v tem prostoru</p>
+				<p class="obrazec">Obrazec UPN - Univerzalni plačilni nalog</p>
+				</div>
+			
+			</div>
+		
+		</div>
+
+			<script>
+			var canvas = document.getElementById("podpis-canvas");
+			var context = canvas.getContext("2d");
+			
+			canvas.width = 162;
+			canvas.height = 75;
+
+			var points = [];
+			var last = 0;
+			var color = "#000000";
+			var size = 2;
+
+			canvas.onmousemove = function(e) {
+			  if (e.buttons == 1) {
+				var offsets = canvas.getBoundingClientRect();
+				var zgoraj = offsets.top;
+				var levo = offsets.left;
+				addClick(e.pageX - levo, e.pageY - zgoraj, true);
+				redraw();
+			  }
+			}
+
+			canvas.onmousedown = function(e) {
+				var offsets = canvas.getBoundingClientRect();
+				var zgoraj = offsets.top;
+				var levo = offsets.left;
+			  addClick(e.pageX - levo, e.pageY - zgoraj, false);
+			  redraw();
+			}
+
+			function addClick(x, y, dragging) {
+			  points.push({x: x, y: y, dragging: dragging });
+			}
+
+			context.lineJoin = "round";
+
+			function redraw() {
+			  context.strokeStyle = color;
+			  context.lineWidth = size;
+			  for (var i = last; i < points.length; i++) {
+				context.beginPath();
+				if (points[i].dragging && i)
+				  context.moveTo(points[i - 1].x, points[i - 1].y);
+				else
+				  context.moveTo(points[i].x, points[i].y);
+				context.lineTo(points[i].x, points[i].y);
+				
+				context.closePath();
+				context.stroke();
+			  }
+			  
+			  last = points.length;
+			}
+		</script>
+	
+	</form>
+
+
+</body>
+
+</html>
